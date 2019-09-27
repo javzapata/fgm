@@ -64,7 +64,7 @@
 #' @export
 #' @author Javier Zapata, Sang-Yun Oh and Alexander Petersen
 #' @references Zapata, J., Oh, S., and Petersen, A. (2019) Functional Graphical Models for Partially Separable Gaussian Processes. Available at arXiv.org 
-#' @details This code uses functions from the testing version of fdapace available at: https://github.com/functionaldata/tPACE
+#' @details This code uses functions from the testing version of fdapace available at: <https://github.com/functionaldata/tPACE>
 
 
 pfpca = function(y, t=seq(0, 1, length.out=dim(y[[1]])[2])){
@@ -120,7 +120,7 @@ pfpca = function(y, t=seq(0, 1, length.out=dim(y[[1]])[2])){
 }
 
 .GetEigenAnalysisResults <- function(smoothCov, regGrid, optns, muWork = NULL) {
-  # this function is based on https://github.com/functionaldata/tPACE/blob/master/R/GetEigenAnalysisResults.R
+  # this function is based on <https://github.com/functionaldata/tPACE/blob/master/R/GetEigenAnalysisResults.R>
   maxK <- optns$maxK
   FVEthreshold <- optns$FVEthreshold
   verbose <- optns$verbose
@@ -175,7 +175,7 @@ pfpca = function(y, t=seq(0, 1, length.out=dim(y[[1]])[2])){
 
 
 .GetMeanDense <- function(ymat, obsGrid, optns){
-  # This function is based on https://github.com/functionaldata/tPACE/blob/master/R/GetMeanDense.R
+  # This function is based on <https://github.com/functionaldata/tPACE/blob/master/R/GetMeanDense.R>
   # Check optns
   if(!(optns$dataType %in% c('Dense', 'DenseWithMV'))){
     stop('Cross sectional mean is only applicable for option: dataType = "Dense" or "DenseWithMV"!')
@@ -200,7 +200,7 @@ pfpca = function(y, t=seq(0, 1, length.out=dim(y[[1]])[2])){
 
 
 .GetCovDense <- function(ymat, mu, optns) {
-  # This function is based on https://github.com/functionaldata/tPACE/blob/master/R/GetCovDense.R
+  # This function is based on <https://github.com/functionaldata/tPACE/blob/master/R/GetCovDense.R>
   if(!(optns$dataType %in% c('Dense', 'DenseWithMV'))){
     stop('Sample Covariance is only applicable for option: dataType = "Dense" or "DenseWithMV"!')
   }

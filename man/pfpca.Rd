@@ -23,7 +23,7 @@ A list with three variables:
 Estimates the partially separable Karhunen-Loeve expansion as described in (CITE HERE)
 }
 \details{
-This code uses functions from the testing version of fdapace available at: https://github.com/functionaldata/tPACE
+This code uses functions from the testing version of fdapace available at: <https://github.com/functionaldata/tPACE>
 }
 \examples{
 ## Variables
