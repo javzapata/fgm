@@ -1,0 +1,12 @@
+Package: fgm
+Type: Package
+Title: Partial Separability and Functional Graphical Models for Multivariate Gaussian Processes
+Version: 1.0
+Author: @author Javier Zapata, Sang-Yun Oh & Alexander Petersen
+Maintainer: Javier Zapata <jzapata@ucsb.edu>, Sang-Yun Oh <syoh@ucsb.edu>
+Description: Estimates an undirected graphical model and a partially separable KL decomposition for a multivariate Gaussian process.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports: JGL, fdapace
+RoxygenNote: 6.1.99.9001
