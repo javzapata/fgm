@@ -33,6 +33,9 @@ This code uses functions from the testing version of fdapace available at: <http
 # phi - list of eigenfunctions densely observed on a time grid
 # y - list containing densely observed multivariate (p-dimensional) functional data 
 
+library(mvtnorm)
+library(fda)
+
 ## Generate data y
  source(system.file("exec", "getOmegaSigma.R", package = "fgm"))
  theta = lapply(1:nbasis, function(b) t(rmvnorm(n = 100, sigma = Sigma[[b]])))
