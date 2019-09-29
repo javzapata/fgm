@@ -28,14 +28,14 @@
 
 #' Partially Separable Karhunen-Loeve Expansion 
 #' 
-#' Estimates the partially separable Karhunen-Loeve expansion as described in (CITE HERE)
+#' Estimates the Karhunen-Loeve expansion for a partially separable multivariate Gaussian process.
 #' @param y  list of length p containing densely observed multivariate (p-dimensional) functional data . \code{y[[j]]} is an nxm matrix of functional data for n subjects observed on a grid of length m
 #' @param t  (optional) grid on which functional data is observed, defaults to seq(0, 1, m) where \code{m = dim(data[[1]])[2]}
 #' @return A list with three variables:
 #' \describe{
-#'   \item{phi}{Lxm matrix where each row denotes the value of a basis function evaluated at a grid of length m}
-#'   \item{theta}{list of length L of functional principal component scores.theta[[l]] is an nxp matrix of vector scores corresponding to the basis function \code{phi[l,]}}
-#'   \item{FVE}{fraction of variability explained by the first L components}
+#'   \item{\code{phi}}{Lxm matrix where each row denotes the value of a basis function evaluated at a grid of length m}
+#'   \item{\code{theta}}{list of length L of functional principal component scores. \code{theta[[l]]} is an nxp matrix of vector scores corresponding to the basis function \code{phi[l,]}}
+#'   \item{\code{FVE}}{fraction of variability explained by the first L components}
 #' }
 #'@examples
 #' ## Variables
@@ -67,7 +67,9 @@
 #' @export
 #' @author Javier Zapata, Sang-Yun Oh and Alexander Petersen
 #' @references Zapata, J., Oh, S., and Petersen, A. (2019) Functional Graphical Models for Partially Separable Gaussian Processes. Available at arXiv.org 
-#' @details This code uses functions from the testing version of fdapace available at: <https://github.com/functionaldata/tPACE>
+#' @details 
+#' This function implements the functional graphical model in Zapata, Oh, and Petersen (2019).
+#' This code uses functions from the testing version of fdapace available at: \url{https://github.com/functionaldata/tPACE}.
 
 
 pfpca = function(y, t=seq(0, 1, length.out=dim(y[[1]])[2])){

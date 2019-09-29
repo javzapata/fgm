@@ -4,11 +4,10 @@ Title: Partial Separability and Functional Graphical Models for Multivariate Gau
 Version: 1.0
 Author: @author Javier Zapata, Sang-Yun Oh & Alexander Petersen
 Maintainer: Javier Zapata <jzapata@ucsb.edu>
-Description: Estimates an undirected graphical model and a partially separable KL decomposition for a multivariate Gaussian process.
+Description: Estimates a functional graphical model and a partially separable KL decomposition for a multivariate Gaussian process.
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
 Imports: JGL, fdapace
 Suggests: mvtnorm, fda, knitr, rmarkdown
-VignetteBuilder: knitr
 RoxygenNote: 6.1.99.9001

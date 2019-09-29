@@ -14,16 +14,17 @@ pfpca(y, t = seq(0, 1, length.out = dim(y[[1]])[2]))
 \value{
 A list with three variables:
 \describe{
-  \item{phi}{Lxm matrix where each row denotes the value of a basis function evaluated at a grid of length m}
-  \item{theta}{list of length L of functional principal component scores.theta[[l]] is an nxp matrix of vector scores corresponding to the basis function \code{phi[l,]}}
-  \item{FVE}{fraction of variability explained by the first L components}
+  \item{\code{phi}}{Lxm matrix where each row denotes the value of a basis function evaluated at a grid of length m}
+  \item{\code{theta}}{list of length L of functional principal component scores. \code{theta[[l]]} is an nxp matrix of vector scores corresponding to the basis function \code{phi[l,]}}
+  \item{\code{FVE}}{fraction of variability explained by the first L components}
 }
 }
 \description{
-Estimates the partially separable Karhunen-Loeve expansion as described in (CITE HERE)
+Estimates the Karhunen-Loeve expansion for a partially separable multivariate Gaussian process.
 }
 \details{
-This code uses functions from the testing version of fdapace available at: <https://github.com/functionaldata/tPACE>
+This function implements the functional graphical model in Zapata, Oh, and Petersen (2019).
+This code uses functions from the testing version of fdapace available at: \url{https://github.com/functionaldata/tPACE}.
 }
 \examples{
 ## Variables

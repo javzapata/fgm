@@ -15,33 +15,34 @@ fgm(
 )
 }
 \arguments{
-\item{y}{list of length p containing densely observed multivariate (p-dimensional) functional data. y[[j]] is an nxm matrix of functional data for n subjects observed on a grid of length m}
+\item{y}{list of length p containing densely observed multivariate (p-dimensional) functional data. \code{y[[j]]} is an nxm matrix of functional data for n subjects observed on a grid of length m}
 
 \item{L}{the number of eigenfunctions used for dimension reduction using the partially separable Karhunen-Loeve (PSKL) expansion obtained using `pfpca()`. This argument can take positive integer values greater or equal to 1.}
 
-\item{alpha}{penalty parameter for the common sparsity pattern taking values in [0,1]}
+\item{alpha}{penalty parameter for the common sparsity pattern taking values in \code{[0,1]}.}
 
 \item{gamma}{penalty parameter for the overall sparsity pattern taking positive values.}
 
-\item{t}{(optional) grid on which functional data is observed, defaults to seq(0, 1, m) where m = dim(data[[1]])[2]}
+\item{t}{(optional) grid on which functional data is observed, defaults to \code{seq(0, 1, m)} where \code{m = dim(data[[1]])[2]}.}
 
-\item{thr.FVE}{this parameter sets a threshold for the minimum percentage of functional variance that the PSKL eigenfunctions (obtained using `pfpca()`) should explained. This criterion is used only if a value for L is not provided or is greater than the maximum possible number of eigenfunctions estimated from y using `pfpca()`.}
+\item{thr.FVE}{this parameter sets a threshold for the minimum percentage of functional variance that the PSKL eigenfunctions (obtained using `pfpca()`) should explained. This criterion is used only if a value for L is not provided or is greater than the maximum possible number of eigenfunctions estimated from \code{y} using \code{pfpca()}.}
 
 \item{include.Omega}{logical variable indicating wheter to include the list of precision matrices in the output. Default value is FALSE.}
 }
 \value{
 A list with letters and numbers.
 \describe{
-  \item{A}{Resulting adjacency matrix as the union of all the Omega matrices}
-  \item{L}{number of PSKL expansion eigenfunctions considered for the estimation of the graphical model.}
-  \item{Omega}{Omega - list of of precision matrices obtained using the multivariate functional principal component scores theta obtained using `fpca()`}
+  \item{\code{A}}{Resulting adjacency matrix as the union of all the Omega matrices}
+  \item{\code{L}}{number of PSKL expansion eigenfunctions considered for the estimation of the graphical model.}
+  \item{\code{Omega}}{list of of precision matrices obtained using the multivariate functional principal component scores theta obtained using `fpca()`}
 }
 }
 \description{
 Estimates a sparse adjacency matrix representing the conditional dependency structure between features of a multivariate Gaussian process
 }
 \details{
-The arguments `alpha` and `gamma` are a reparameterization of the Group Graphical Lasso tuning parameters when using the `JGL` package. When using `JGL::JGL`, the tuning parameters are computed as `lambda1 = alpha*gamma` and `lambda2 = (1-alpha)*gamma`
+This function implements the functional graphical model in Zapata, Oh, and Petersen (2019).
+The arguments \code{alpha} and \code{gamma} are a reparameterization of the Group Graphical Lasso tuning parameters when using the \code{JGL} package. When using \code{JGL::JGL}, the tuning parameters are computed as \code{lambda1 = alpha*gamma} and \code{lambda2 = (1-alpha)*gamma}
 }
 \examples{
 ## Variables
@@ -72,7 +73,7 @@ library(fda)
 
 }
 \references{
-Zapata, J., Oh, S., and Petersen, A. (2019) Functional Graphical Models for Partially Separable Gaussian Processes. Available at arXiv.org
+(1) Zapata, J., Oh, S., and Petersen, A. (2019) Functional Graphical Models for Partially Separable Gaussian Processes. Available at arXiv.org
 }
 \author{
 Javier Zapata, Sang-Yun Oh and Alexander Petersen
