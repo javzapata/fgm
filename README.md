@@ -16,7 +16,7 @@ The methods implemented here are based on the following paper:
 
 ## Theory
 
-A multivariate Gaussian process X is **partially separable** if there exists an orthonormal basis $$\{\psi_l}_{l=1}$$
+A multivariate Gaussian process X is **partially separable** if there exists an orthonormal basis $`\{\psi_l}_{l=1}`$
 
 ## Functions
 
