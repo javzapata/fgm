@@ -23,6 +23,12 @@ A multivariate Gaussian process `X` is partially separable if there exists an or
 
 <img src="https://render.githubusercontent.com/render/math?math=\theta_{lj}=\int_0^1 %20X_j(s) %20\varphi_l(s)ds">
 
+### Univariate Karhunen-Loeve expansion:
+
+<img src="https://render.githubusercontent.com/render/math?math=X_j(t)=\sum_{l=1}^\infty %20\xi_{jl} %20\phi_{jl}(t)">
+
+<img src="https://render.githubusercontent.com/render/math?math=\theta_{lj}=\int_0^1 %20X_j(s) %20\varphi_l(s)ds">
+
 ## Functions
 
 **fpca** : Estimates the Karhunen-Loeve expansion for a partially separable multivariate Gaussian process.
