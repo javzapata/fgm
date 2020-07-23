@@ -33,13 +33,20 @@ Univariate KL expansion possesses a potentially full inverse covariance structur
 
 ## Functions
 
-**Generate example data**
+**fpca** : Estimates the Karhunen-Loeve expansion for a partially separable multivariate Gaussian process.
 <pre><code>
+## Variables
+# Omega - list of precision matrices, one per eigenfunction
+# Sigma - list of covariance matrices, one per eigenfunction
+# theta - list of functional  principal component scores
+# phi - list of eigenfunctions densely observed on a time grid
+# y - list containing densely observed multivariate (p-dimensional) functional data 
+
 library(mvtnorm)
 library(fda)
 library(fgm)
-## Estimation using fgm package
-## Generate Multivariate Gaussian Process
+
+## Generate data y
  source(system.file("exec", "getOmegaSigma.R", package = "fgm"))
  theta = lapply(1:nbasis, function(b) t(rmvnorm(n = 100, sigma = Sigma[[b]])))
  theta.reshaped = lapply( 1:p, function(j){
@@ -51,14 +58,11 @@ library(fgm)
  phi = t(predict(phi.basis, t))[chosen.basis,]
  y = lapply(theta.reshaped, function(th) t(th)\%*\%phi)
  
-## Solve
- fgm(y, alpha=0.5, gamma=0.8)
-
+## Solve  
+ pfpca(y)
 </code></pre>
 
-**fpca** : Estimates the Karhunen-Loeve expansion for a partially separable multivariate Gaussian process.
-
-**fgm**: Estimates  a  sparse  adjacency  matrix  representing  the  conditional  dependency  structure  betweenfeatures of a multivariate Gaussian process
+**fgm**: Estimates  a  sparse  adjacency  matrix  representing  the  conditional  dependency  structure  between features of a multivariate Gaussian process
 
 <pre><code>
 ## Variables
