@@ -42,6 +42,9 @@ Univariate KL expansion possesses a potentially full inverse covariance structur
 # phi - list of eigenfunctions densely observed on a time grid
 # y - list containing densely observed multivariate (p-dimensional) functional data 
 
+install.packages('mvtnorm')
+install.packages('fda')
+install.packages('fgm')
 library(mvtnorm)
 library(fda)
 library(fgm)
@@ -72,6 +75,9 @@ library(fgm)
 # phi - list of eigenfunctions densely observed on a time grid
 # y - list containing densely observed multivariate (p-dimensional) functional data 
 
+install.packages('mvtnorm')
+install.packages('fda')
+install.packages('fgm')
 library(mvtnorm)
 library(fda)
 library(fgm)
