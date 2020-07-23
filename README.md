@@ -37,9 +37,28 @@ Univariate KL expansion possesses a potentially full inverse covariance structur
 
 **fmg**: Estimates  a  sparse  adjacency  matrix  representing  the  conditional  dependency  structure  betweenfeatures of a multivariate Gaussian process
 
-<pre><code>tell application "Foo"
-    beep
-end tell
+<pre><code>
+library(mvtnorm)
+library(fda)
+library(fgm)
+## Estimation using fgm package
+## Generate Multivariate Gaussian Process
+ source(system.file("exec", "getOmegaSigma.R", package = "fgm"))
+ theta = lapply(1:nbasis, function(b) t(rmvnorm(n = 100, sigma = Sigma[[b]])))
+ theta.reshaped = lapply( 1:p, function(j){
+     t(sapply(1:nbasis, function(i) theta[[i]][j,]))
+ })
+ phi.basis=create.fourier.basis(rangeval=c(0,1), nbasis=21, period=1)
+ t = seq(0, 1, length.out = time.grid.length)
+ chosen.basis = c(2, 3, 6, 7, 10, 11, 16, 17, 20, 21)
+ phi = t(predict(phi.basis, t))[chosen.basis,]
+ y = lapply(theta.reshaped, function(th) t(th)\%*\%phi)
+ 
+## Solve
+ fgm(y, alpha=0.5, gamma=0.8)
+
+
+
 </code></pre>
 
 
