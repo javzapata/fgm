@@ -16,11 +16,9 @@ The methods implemented here are based on the following paper:
 
 ## Theory
 
-A multivariate Gaussian process X is **partially separable** if there exists an orthonormal basis $`\{\psi_l}_{l=1}`$
-
 ## Functions
 
 **fpca** : Estimates the Karhunen-Loeve expansion for a partially separable multivariate Gaussian process.
-
+<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
 
 
