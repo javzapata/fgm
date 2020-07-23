@@ -20,7 +20,7 @@ A multivariate Gaussian process `X` is partially separable if there exists an or
 ### Partial Separability Karhunen-Loeve expansion:
 
 <img src="https://render.githubusercontent.com/render/math?math=X(t)=\sum_{l=1}^\infty%2B\theta_l%2B\varphi_l">
-<img src="https://render.githubusercontent.com/render/math?math=theta_{lj}=\int_0^1%2B\X_j(s)%2B\varphi_l(s)ds">
+<img src="https://render.githubusercontent.com/render/math?math=theta_{lj}=\int_0^1%2BX_j(s)%2B\varphi_l(s)ds">
 
 ## Functions
 
