@@ -15,12 +15,12 @@ The methods implemented here are based on the following paper:
 **Installation**: simply run `install.packages('fgm')` in the R console
 
 ## Theory
-A multivariate Gaussian process `X` is partially separable if there exists an orthonormal basis  <img src="https://render.githubusercontent.com/render/math?math=\{\varphi_l\}"> of <img src="https://render.githubusercontent.com/render/math?math=L^2[0,1]"> such that the random vectors <img src="https://render.githubusercontent.com/render/math?math=\theta_l=\big(<X_1,\varphi_l>,\dots,<X_p,\varphi_l>"> are mutually uncorrelated. 
+A multivariate Gaussian process `X` is partially separable if there exists an orthonormal basis  <img src="https://render.githubusercontent.com/render/math?math=\{\varphi_l\}"> of <img src="https://render.githubusercontent.com/render/math?math=L^2[0,1]"> such that the random vectors <img src="https://render.githubusercontent.com/render/math?math=\theta_l=\big(<X_1,\varphi_l>,\dots,<X_p,\varphi_l>\big)"> are mutually uncorrelated. 
 
 ### Partial Separability Karhunen-Loeve expansion:
 
 <img src="https://render.githubusercontent.com/render/math?math=X(t)=\sum_{l=1}^\infty%2B\theta_l%2B\varphi_l">
-<img src="https://render.githubusercontent.com/render/math?math=theta_{lj}=\int_0^1%2BX_j(s)%2B\varphi_l(s)ds">
+<img src="https://render.githubusercontent.com/render/math?math=\theta_{lj}=\int_0^1%2BX_j(s)%2B\varphi_l(s)ds">
 
 ## Functions
 
