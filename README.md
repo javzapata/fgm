@@ -35,5 +35,11 @@ Univariate KL expansion possesses a potentially full inverse covariance structur
 
 **fpca** : Estimates the Karhunen-Loeve expansion for a partially separable multivariate Gaussian process.
 
+**fmg**: Estimates  a  sparse  adjacency  matrix  representing  the  conditional  dependency  structure  betweenfeatures of a multivariate Gaussian process
+
+<pre><code>tell application "Foo"
+    beep
+end tell
+</code></pre>
 
 
