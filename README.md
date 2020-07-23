@@ -18,7 +18,8 @@ The methods implemented here are based on the following paper:
 A multivariate Gaussian process `X` is partially separable if there exists an orthonormal basis  <img src="https://render.githubusercontent.com/render/math?math=\{\varphi_l\}"> of <img src="https://render.githubusercontent.com/render/math?math=L^2[0,1]"> such that the random vectors <img src="https://render.githubusercontent.com/render/math?math=\theta_l=\big(<X_1,\varphi_l>,\dots,<X_p,\varphi_l>"> are mutually uncorrelated. 
 
 ### Partial Separability Karhunen-Loeve expansion:
-<img src="https://render.githubusercontent.com/render/math?math=X(t)=\sum_{l=1}^\infty\theta_l\varphi_l(t)">
+
+<img src="https://render.githubusercontent.com/render/math?math=X(t)=\sum_{l=1}^\infty">
 
 
 ## Functions
