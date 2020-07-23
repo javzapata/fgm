@@ -12,6 +12,10 @@ The methods implemented here are based on the following paper:
 
 (journal link) ... under review...
 
+
+![posterFGM](https://github.com/javzapata/fgm/raw/master/poster%20FGM.png)
+
+
 **Installation**: simply run `install.packages('fgm')` in the R console
 
 ## Theory
