@@ -15,10 +15,8 @@ The methods implemented here are based on the following paper:
 **Installation**: simply run `install.packages('fgm')` in the R console
 
 ## Theory
-A multivariate Gaussian process `X` is partially separable if there exists an orthonormal basis 
+A multivariate Gaussian process `X` is partially separable if there exists an orthonormal basis  <img src="https://render.githubusercontent.com/render/math?math=\{\varphi_l\}"> of <img src="https://render.githubusercontent.com/render/math?math=L^2[0,1]"> such that the random vectors <img src="https://render.githubusercontent.com/render/math?math=\theta_l=\big(<X_1,\varphi_l>,\dots,">
 
-<img src="https://render.githubusercontent.com/render/math?math=\{\psi_l\}"> of <img src="https://render.githubusercontent.com/render/math?math=L^2[0,1]">
-<img src="https://render.githubusercontent.com/render/math?math=e^{i %2B\pi} =x%2B1">
 ## Functions
 
 **fpca** : Estimates the Karhunen-Loeve expansion for a partially separable multivariate Gaussian process.
