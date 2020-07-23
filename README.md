@@ -17,7 +17,7 @@ The methods implemented here are based on the following paper:
 ## Theory
 A multivariate Gaussian process `X` is partially separable if there exists an orthonormal basis 
 
-<img src="https://render.githubusercontent.com/render/math?math= \{\psi_l\}_{l=1}"> of <img src="https://render.githubusercontent.com/render/math?math=L^2[0,1]">
+<img src="https://render.githubusercontent.com/render/math?math= \{\psi_l\}"> of <img src="https://render.githubusercontent.com/render/math?math=L^2[0,1]">
 <img src="https://render.githubusercontent.com/render/math?math=e^{i %2B\pi} =x%2B1">
 ## Functions
 
