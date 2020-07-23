@@ -14,14 +14,13 @@ The methods implemented here are based on the following paper:
 
 **Installation**: simply run `install.packages('fgm')` in the R console
 
+## Theory
+
+A multivariate Gaussian process X is **partially separable** if there exists an orthonormal basis $\{\psi_l}_{l=1}$ 
+
+## Functions
+
 **fpca** : Estimates the Karhunen-Loeve expansion for a partially separable multivariate Gaussian process.
 
-A multivariate Gaussian process 
-
-<object data="https://github.com/javzapata/fgm/blob/master/poster%20FGM.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="https://github.com/javzapata/fgm/blob/master/poster%20FGM.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://yoursite.com/the.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
 
 
