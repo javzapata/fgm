@@ -10,3 +10,5 @@ The methods implemented here are based on the following paper:
 (Draft copy) https://arxiv.org/abs/1910.03134
 
 (journal link) ... under review...
+
+Installation: simply run `install.packages('fgm')` in the R console
