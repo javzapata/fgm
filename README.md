@@ -15,7 +15,9 @@ The methods implemented here are based on the following paper:
 **Installation**: simply run `install.packages('fgm')` in the R console
 
 ## Theory
-A multivariate Gaussian process `X` is partially separable if there exists an orthonormal basis <img src="https://render.githubusercontent.com/render/math?math= \{ \psi_l \}_{l \geq 1}"> of <img src="https://render.githubusercontent.com/render/math?math= L^2[0,1]">
+A multivariate Gaussian process `X` is partially separable if there exists an orthonormal basis 
+
+<img src="https://render.githubusercontent.com/render/math?math= \\{ \psi_l \\}_{l = 1}"> of <img src="https://render.githubusercontent.com/render/math?math= L^2[0,1]">
 
 ## Functions
 
