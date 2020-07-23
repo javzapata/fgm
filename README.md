@@ -1,5 +1,6 @@
 # fgm
 R package for Partially Separable Multivariate Functional Data and Functional Graphical Models
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/javzapata/fgm/master)
 
 This repository contains the source code for the R-package `fgm` at CRAN: 
 
