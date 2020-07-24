@@ -1,6 +1,6 @@
 # fgm - Functional Graphical Models and Partial Separability
 R package for Partially Separable Multivariate Functional Data and Functional Graphical Models
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/javzapata/fgm/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/javzapata/fgm/master?urlpath=rstudio)
 
 **Installation**: simply run `install.packages('fgm')` in the R console
 
